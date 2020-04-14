@@ -1,15 +1,16 @@
-package pl.memexurer.antymakiero;
+package pl.memexurer.antymakiero.listener;
 
 import com.comphenix.protocol.PacketType;
 import com.comphenix.protocol.events.PacketAdapter;
 import com.comphenix.protocol.events.PacketEvent;
 import com.comphenix.protocol.wrappers.EnumWrappers;
 import org.bukkit.plugin.java.JavaPlugin;
+import pl.memexurer.antymakiero.data.ClickCheckData;
 
 public class InteractPacketAdapter extends PacketAdapter {
     private ClickCheckData clickData;
 
-    InteractPacketAdapter(JavaPlugin owner, ClickCheckData clickData) {
+    public InteractPacketAdapter(JavaPlugin owner, ClickCheckData clickData) {
         super(owner, PacketType.Play.Client.USE_ENTITY);
         this.clickData = clickData;
     }

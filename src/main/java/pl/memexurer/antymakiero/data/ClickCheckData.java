@@ -1,20 +1,20 @@
-package pl.memexurer.antymakiero;
+package pl.memexurer.antymakiero.data;
 
 import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
 
-class ClickCheckData {
+public class ClickCheckData {
     private ConcurrentHashMap<UUID, ClickCheckPlayer> clicks;
 
-    ClickCheckData() {
+    public ClickCheckData() {
         this.clicks = new ConcurrentHashMap<>();
     }
 
-    void clearClicks() {
+    public void clearClicks() {
         this.clicks.forEach((a, b) -> b.clear());
     }
 
-    ClickCheckPlayer getPlayer(UUID uuid) {
+    public ClickCheckPlayer getPlayer(UUID uuid) {
         return clicks.computeIfAbsent(uuid, x -> new ClickCheckPlayer());
     }
 

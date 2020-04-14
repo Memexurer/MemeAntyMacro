@@ -1,6 +1,6 @@
-package pl.memexurer.antymakiero;
+package pl.memexurer.antymakiero.data;
 
-class ClickCheckPlayer {
+public class ClickCheckPlayer {
     private int clicks;
     private long lastBlock;
 
@@ -9,7 +9,7 @@ class ClickCheckPlayer {
         this.lastBlock = 0;
     }
 
-    void addClick() {
+    public void addClick() {
         this.clicks++;
     }
 
@@ -17,15 +17,15 @@ class ClickCheckPlayer {
         this.clicks = 0;
     }
 
-    void blockClicks() {
+    public void blockClicks() {
         this.lastBlock = System.currentTimeMillis();
     }
 
-    boolean isLimited() {
-        return clicks > 12;
+    public boolean isLimited(int i) {
+        return clicks > i;
     }
 
-    boolean isBlocked() {
+    public boolean isBlocked() {
         return lastBlock != 0 && (System.currentTimeMillis() - lastBlock) < 1000 * 5;
     }
 }

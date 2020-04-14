@@ -1,0 +1,10 @@
+## MemeAntyMacro - Doyebany plugin na antymakiero.
+## Permisje: antymacro.bypass - mozliwosc obejscia tej blokady
+## antymacro.broadcast - mozliwosc odbierania wiadomosci, ze ktos przekroczyl limit
+
+click_limit: 15 # Maksymalna ilosc dozwolonych CPSow.
+admin_broadcast_message: "&7Gracz &c{PLAYERNAME} &7przekroczyl dozwolona ilosc CPSow!" # Wiadomosc wysylana do administracji z permisja antymacro.broadcast
+title: # Title wysylany do gracza kiedy przekroczy te 15 cpsow
+  title: "&c&lANTYMAKIERO"
+  subtitle: "&7Maksymalna ilosc CPSow wynosi &c15&7!"
+blindness_effect: true # Czy ma dawac efekt oslepienia kiedy gracz przekroczy limit?
