@@ -1,4 +1,4 @@
 # MemeAntyMacro
 dojebany plugin na blokowanie makra
 ## Pobieranie
-Zakładka (https://github.com/Nemerux/MemeAntyMacro/)[/releases]
+Zakładka (/releases)[https://github.com/Nemerux/MemeAntyMacro/releases]
